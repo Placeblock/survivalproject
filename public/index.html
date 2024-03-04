@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script
+			  src="https://code.jquery.com/jquery-3.6.0.min.js"
+			  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+			  crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="front-content">
+        <p id="header">Survival 1.17</p>
+        <img src="down.png" id="scrollbutton">
+    </div>
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+        <p class="section-header">Projekt-Leitung:</p>
+        <div class="flex-container">
+            <div class="card-container">
+                <img src="placeblock.png" class="card-image">
+                <p class="card-text">PlaceblockHD #4057</p>
+            </div>
+            <div class="card-container">
+                <img src="gamerdog.png" class="card-image">
+                <p class="card-text">_Gamer_Dog_ #8632</p>
+            </div>
+        </div>
+    </section>
+    <section style="height: 400px; font-size: 25px;" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+        <p style="text-align: center;">Survival Projekt vom aller Feinsten!</p>
+        <p style="text-align: center;">Spiele mit deinen Freunden im Team und baue wozu du Lust hast!</p>
+    </section>
+    <section data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400" style="height: 300px;">
+        <p>Zusammen wünschen wir euch Viel Spaß!</p>
+    </section>
+    <div class="flex-container" style="padding-top: 30px; padding-bottom: 30px;">
+        <a style="display: flex; justify-content: center; align-items: center;" href="https://discord.gg/G5wVBwDCZp">
+            <img src="discord.jpg" style="width: 50px; border-radius: 50%; margin-right: 10px;">
+            <p>Discord</p>
+        </a>
+    </div>
+    <script>
+        AOS.init();
+
+        $('#scrollbutton').on('click', function(e) {
+				$('html, body').animate({
+					scrollTop: $(window).height()
+				}, 500);
+			});
+    </script>
+</body>
+</html>
